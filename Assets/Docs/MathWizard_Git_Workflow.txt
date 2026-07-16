@@ -1,0 +1,88 @@
+Math Wizard Git Workflow (Daily Development)
+
+One-time setup
+
+-   main = stable releases only.
+-   develop = integration branch.
+-   Create feature branches from develop.
+
+Start a new task
+
+    git switch develop
+    git pull
+    git switch -c feature/<feature-name>
+
+Example:
+
+    git switch -c feature/boot-scene
+
+While working
+
+Check status:
+
+    git status
+
+Stage changes:
+
+    git add .
+
+Commit:
+
+    git commit -m "Create Boot scene"
+
+Commit often with clear messages.
+
+Push your branch
+
+First push:
+
+    git push -u origin feature/<feature-name>
+
+Later pushes:
+
+    git push
+
+Merge
+
+1.  Open GitHub.
+2.  Create a Pull Request.
+3.  Base: develop
+4.  Compare: feature/<feature-name>
+5.  Merge after review.
+6.  Delete the feature branch.
+
+Start the next feature
+
+    git switch develop
+    git pull
+    git switch -c feature/<next-feature>
+
+Stable release
+
+When develop is stable: - Create a Pull Request from develop into
+main. - Merge. - Tag the release:
+
+    git tag v0.1.0
+    git push origin v0.1.0
+
+Commands you’ll use most
+
+    git status
+    git add .
+    git commit -m "message"
+    git push
+    git pull
+    git switch <branch>
+    git switch -c <branch>
+    git branch
+    git log --oneline --graph --decorate --all
+
+Rules
+
+-   Never commit directly to main.
+-   Always branch from develop.
+-   Keep feature branches focused on one feature.
+-   Commit small, meaningful changes.
+-   Pull before starting work.
+-   Use Pull Requests for merges.
+-   Move Unity assets only inside the Unity Editor.
