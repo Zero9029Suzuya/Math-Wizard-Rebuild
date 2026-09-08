@@ -110,3 +110,22 @@ InitTestScene*.unity*
 .vscode/*.code-workspace
 .vscode/workspaceStorage/
 .vscode/history/
+
+# ==============================
+# Math Wizard project-specific
+# ==============================
+
+# Local/editor files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local build output
+/BuildOutput/
+/BuildsLocal/
+
+# Large generated/exported data
+/[Aa]ssets/[Tt]emporary [Aa]ssets/Generated/

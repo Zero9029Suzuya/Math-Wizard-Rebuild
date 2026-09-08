@@ -1,0 +1,30 @@
+# Auto-detect text files
+* text=auto
+
+# Unity text assets
+*.meta text
+*.unity text
+*.prefab text
+*.asset text
+*.anim text
+*.controller text
+*.mat text
+*.shader text
+*.cginc text
+*.hlsl text
+*.cs text
+*.json text
+*.xml text
+*.txt text
+
+# Common binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.fbx binary
+*.blend binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
